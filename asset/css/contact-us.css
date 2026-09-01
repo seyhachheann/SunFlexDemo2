@@ -1,0 +1,188 @@
+  :root{
+    --sf-navy: #0B1E3D;
+    --sf-navy-2: #12305C;
+    --sf-cyan: #00A8B5;
+    --sf-bg: #F6F8FB;
+    --sf-text-soft: #5B6779;
+    --sf-line: #E4E8EF;
+  }
+    :root{
+    --bg:        #123a2b;
+    --bg-panel:  #16452f;
+    --brand:     #2d6f54;
+    --brand-lt:  #2f9d68;
+    --glow:      #4dcf94;
+    --ink:       #ffffff;
+    --muted:     #cfe3d7;
+    --line:      rgba(255,255,255,0.14);
+    --nav-bg:    #ffffff;
+    --nav-text:  #1c2e26;
+    --nav-hover: #2d6f54;
+  }
+  *{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+  /* body{ font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; margin:0; } */
+  /* h1,h2,h3{ font-family: 'Montserrat', 'Segoe UI', sans-serif; } */
+ 
+  .text-bg{
+    color: var(--bg-panel);
+  }
+  /* ===================== HERO + STAT BAR ===================== */
+  .about-hero{
+    position: relative;
+    height: 460px;
+    background:
+      /* linear-gradient(120deg, rgba(11,30,61,.88), rgba(11,30,61,.55)), */
+      linear-gradient(130deg, #07854a9b, #18efa400),
+      url(../img/Contact-Us-Banner2.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .about-hero .container{ position: relative; z-index: 2; }
+  .about-hero h1{
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 700;
+    max-width: 560px;
+    line-height: 1.2;
+  }
+  .about-hero p{
+    max-width: 480px;
+    color: #C9D2E0;
+    margin: 16px 0 26px;
+    font-size: 15.5px;
+  }
+
+
+
+  /* === Contact Us Card === */
+    :root{
+    --green-900:#0F3423;
+    --green-800:#16452F;
+    --green-700:#1E5B3C;
+    --green-500:#2F8C58;
+    --green-300:#8FC3A6;
+    --green-100:#E6F1EA;
+    --green-50:#F4F9F6;
+    --ink:#152019;
+    --ink-mid:#4B5952;
+    --ink-dim:#8B9A91;
+    --line:#DCE8E0;
+  }
+  /* body{font-family:'Inter',sans-serif; color:var(--ink); margin:0;} */
+
+  .contact-section{
+    background:var(--green-50);
+    padding:90px 6vw 100px;
+    position:relative;
+    overflow:hidden;
+  }
+  .contact-section::before{
+    content:"";
+    position:absolute; top:0; left:0; width:480px; height:480px;
+    background:radial-gradient(circle, var(--green-100) 0%, transparent 70%);
+    transform:translate(-30%,-35%);
+    pointer-events:none;
+  }
+  .contact-wrap{max-width:1180px; margin:0 auto; position:relative;}
+
+  .contact-eyebrow{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--bg-panel);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .contact-eyebrow .bar{width:24px; height:2px; background:var(--bg-panel);}
+
+  .contact-title{
+    font-weight: 700;
+    /* color: var(--sf-navy); */
+    color: var(--bg-panel);
+    font-size: clamp(28px, 3.4vw, 40px);
+    margin-bottom: 12px;
+  }
+  .contact-sub{
+    max-width:640px; font-size:15.5px; line-height:1.7; color:var(--ink-mid);
+    margin:0 0 56px;
+  }
+
+  /* ---- Info cards ---- */
+  .contact-cards{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+    margin-bottom:56px;
+  }
+  .contact-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:34px 28px;
+    text-align:left;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition:transform 0.3s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .contact-card:hover{
+    /* transform:translateY(-4px); */
+    /* transform: scaleX(4px); */
+    transform: scale(1.1);
+    box-shadow:0 16px 32px -18px rgba(15,52,35,0.28);
+    border-color: var(--glow);
+    background-color: var(--bg-panel);
+    color: white;
+    transition: 0.3s;
+  }
+  .contact-card:hover h4{
+    color: white;
+  }
+  .contact-card:hover p{
+    color: #b6b6b6;
+  }
+  .contact-card:hover .address-a{
+    color: #b6b6b6;
+  }
+  .contact-card:hover a{
+    color: white;
+  }
+  .contact-icon{
+    width:48px; height:48px; border-radius:50%;
+    background:var(--green-100); color:var(--green-700);
+    display:flex; align-items:center; justify-content:center;
+    font-size:18px; margin-bottom:20px;
+  }
+  .contact-card h4{
+    font-family:'Space Grotesk',sans-serif; font-size:17px; font-weight:600;
+    color:var(--green-900); margin:0 0 8px;
+  }
+  .contact-card p{font-size:14px; line-height:1.65; color:var(--ink-mid); margin:0;}
+  .contact-card a{color:var(--green-700); text-decoration:none; font-weight:500;}
+  .contact-card a:hover{text-decoration:underline;}
+
+  /* ---- Map ---- */
+  .contact-map{
+    border-radius: 15px; overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 20px 40px -26px rgba(15,52,35,0.25);
+  }
+  .contact-map iframe{
+    width:100%; height:380px; border:0; display:block; filter:grayscale(.15) contrast(1.02);
+  }
+
+  @media (max-width:860px){
+    .contact-cards{grid-template-columns:1fr;}
+  }
+
+  .address-a{
+    display: inline-block;
+    text-decoration: none;
+    color: #b6b6b6;
+    /* font-size: 12px; */
+  }
