@@ -49,7 +49,8 @@
   html,body{ 
     scroll-behavior:smooth; 
     overflow-x:hidden;
-    background:var(--bg);
+    /* background:var(--bg); */
+    background-color: white;
   }
 
   section[id]{ scroll-margin-top: var(--navbar-h); }
