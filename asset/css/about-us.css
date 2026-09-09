@@ -187,7 +187,8 @@
  
   /* ===================== SERVICES GRID ===================== */
   .services-block{
-    padding: 90px 0 110px;
+    /* padding: 90px 0 110px; */
+    padding:84px 6vw 0px;
     background: #fff;
   }
   .box-shadow-about-us-block{
@@ -442,6 +443,9 @@
   @media (max-width:520px){
     .sfx-chain{grid-template-columns:1fr;}
     .sfx-section{padding:60px 6vw 70px;}
+    .services-block{
+      padding: 60px 6vw 70px;
+    }
   }
   .end-text{
     color: var(--brand);
@@ -479,3 +483,19 @@
 .sfx-panel{
   overflow: hidden;
 }
+
+
+/* .sfx-corner-tag{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 2;
+  background: #16452F;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 8px 10px;
+
+} */

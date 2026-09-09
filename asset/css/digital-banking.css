@@ -93,8 +93,11 @@
  
   /* ---- Tabs: left-aligned, natural width, underline on active ---- */
   .nda-tabs{
-    display:flex; gap:36px; border-bottom:2px solid var(--glow);
-    margin-bottom:44px; position:relative;
+    display:flex; gap:36px; 
+    border-bottom:2px solid var(--ink-mid);
+    margin-bottom:44px;
+    position:relative;
+    overflow-x: auto;
   }
   .nda-tab{
     background:none; border:none; cursor:pointer; white-space:nowrap;

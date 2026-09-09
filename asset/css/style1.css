@@ -414,10 +414,30 @@
     .sf-solution-media img, .sf-solution-btn, .sf-solution-btn i{ transition:none; }
   }
   @media (min-width: 768px) and (max-width: 991.98px){
-  .sf-solution-media img{
-    max-width:480px;
-    display:block;
-    margin:0 auto;
+    .sf-solution-media img{
+      max-width:480px;
+      display:block;
+      margin:0 auto;
+    }
+  }
+  @media (max-width: 1200px){
+  .sf-solution-title{
+    font-size: clamp(1.6rem, 2.3vw, 2rem);   /* was likely closer to 1.6–2.2rem — scale down */
+  }
+  .sf-solution-body p{
+    font-size: 0.86rem;
+  }
+  .sf-solution-body h6{
+    font-size: 0.92rem;
+  }
+  .sf-solution-tag{
+    font-size: 0.7rem;
+  }
+  .sf-solution-btn{
+    font-size: 0.85rem;
+  }
+  .sf-solution li{
+    font-size: 0.86rem;
   }
 }
 
@@ -667,7 +687,7 @@
     .ring, .logo-plate{ transform:scale(0.8); }
   } */
 
-  @media (max-width:1185px){
+  @media (max-width:1120px){
     .content{ grid-template-columns:1fr; padding:56px 24px; text-align:left; }
     .visual-side{ order:-1 !important; margin-bottom:12px; min-height:220px; }
     .text-side{ order:2; }
@@ -1457,6 +1477,9 @@
 
 @media (max-width: 991px){
   .flip-card{ min-height: 320px; } /* columns stack, so no need to match text height on mobile */
+  .repso-about-text{
+    font-size: 0.88rem;
+  }
 }
 
 
