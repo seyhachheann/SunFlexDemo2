@@ -1215,7 +1215,7 @@
 
 @keyframes sfVendorScroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-26%); } 
+  100% { transform: translateX(-25%); } 
   /* Decrease % for slow animation partner show wrap */
 }
 
