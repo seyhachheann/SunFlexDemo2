@@ -1215,7 +1215,8 @@
 
 @keyframes sfVendorScroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-35%); }
+  100% { transform: translateX(-26%); } 
+  /* Decrease % for slow animation partner show wrap */
 }
 
 @media (max-width: 767.98px) {
