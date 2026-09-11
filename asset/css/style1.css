@@ -1206,7 +1206,7 @@
   /* border-color: rgba(255,255,255,0.3); */
   transform: scale(1.1);
   transition: 0.2s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .sf-vendor-pill:hover img {
