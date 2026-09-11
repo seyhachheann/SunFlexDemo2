@@ -1215,7 +1215,7 @@
 
 @keyframes sfVendorScroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-25%); } 
+  100% { transform: translateX(-20%); } 
   /* Decrease % for slow animation partner show wrap */
 }
 
@@ -1392,7 +1392,7 @@
     padding-top: 40px;
     padding-bottom: 80px;
   }
-    .about-block .eyebrow{
+  .about-block .eyebrow{
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1401,7 +1401,9 @@
     text-transform: uppercase;
     color: var(--brand);
     font-weight: 700;
+    font-family:'JetBrains Mono', monospace;
     margin-bottom: 10px;
+    /* font-family: m; */
   }
   .about-block .eyebrow::before{
     content: "";
@@ -1999,4 +2001,21 @@
 
   @media (prefers-reduced-motion: reduce){
     .sfx-loader-logo, .sfx-loader-bar-fill{ animation:none; }
+  }
+
+
+  .btn-view-partners{
+    font-size: 15px; 
+    font-weight: 600; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    color: #123a2b;
+  }
+
+  .btn-view-partners:hover .arrow-change{
+    color: var(--glow);
+    
+  }
+  .btn-view-partners:hover{
+    text-decoration: underline;
   }
