@@ -2003,9 +2003,13 @@
     .sfx-loader-logo, .sfx-loader-bar-fill{ animation:none; }
   }
 
+  .btn-view-partners .arrow{
+    font-size: 17px;
+    /* width: 200px; */
+  }
 
   .btn-view-partners{
-    font-size: 15px; 
+    font-size: 14px; 
     font-weight: 600; 
     text-decoration: none; 
     border-radius: 25px; 
